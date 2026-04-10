@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png"
 import { login, signup } from "../../firebase"
 import netflix_spinner from "../../assets/netflix_spinner.gif"
 
-const Login = (loggedIn) => {
+const Login = ({ loggedIn }) => {
 
   const [signState, setSignState] = useState("Sign In");
 
