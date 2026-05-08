@@ -32,9 +32,9 @@ const signup = async (name, email, password) => {
         const user = res.user;
         await addDoc(collection(db, "user"), {
             uid: user.uid,
-            name,
+            name: name,
             authProvider: "local",
-            email
+            email: email
         });
     } catch (error) {
         console.log(error);
